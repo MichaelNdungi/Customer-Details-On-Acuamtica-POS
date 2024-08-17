@@ -1,0 +1,50 @@
+﻿<Graph ClassName="IGFSQuickOrderEntry" Source="#CDATA" IsNew="True" FileType="ExistingGraph">
+    <CDATA name="Source"><![CDATA[using System;
+using PX.Objects;
+using PX.Data;
+
+namespace IGFS
+{
+  public class IGFSQuickOrderExt : PXGraphExtension<IGFS.IGFSQuickOrderEntry>
+  {
+
+     
+    #region Event Handlers
+    
+      protected void IGFSQuickOrder_RowSelected(PXCache cache, PXRowSelectedEventArgs e)
+   {
+      var row = (IGFS.DAC.IGFSQuickOrder)e.Row;
+if(row!=null){
+     
+     IGFS.DAC.IGFSQuickOrderExt ext = PXCache<IGFS.DAC.IGFSQuickOrder>.GetExtension<IGFS.DAC.IGFSQuickOrderExt>(row);
+
+   
+      
+       if(row != null && row.Status!="C")
+    {
+    
+     PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrAccountName>(cache, row, true);
+    PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrAddressone>(cache, row, true);
+    PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrAddresstwo>(cache, row, true);
+    PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrPhone>(cache, row, true);
+     PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrTaxPin>(cache, row, true);
+     PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrderExt.usrAccountEmail>(cache, row, true);
+    }
+
+    
+
+         if(row != null && row.Status!="C" && row.PaymentMethodID =="IPAY")
+    {
+    
+      PXUIFieldAttribute.SetEnabled<IGFS.DAC.IGFSQuickOrder.extRefNbr>(cache, row, true);
+    }
+}
+    
+}
+    
+
+
+    #endregion
+  }
+}]]></CDATA>
+</Graph>

@@ -1,0 +1,8 @@
+﻿<Table TableName="IGFSQuickOrder">
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrAccountName" ColumnType="string" AllowNull="True" MaxLength="25" DecimalPrecision="2" IsNewColumn="True" IsUnicode="True" />
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrPhone" ColumnType="string" AllowNull="True" MaxLength="25" DecimalPrecision="2" IsNewColumn="True" IsUnicode="True" />
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrAddressone" ColumnType="string" AllowNull="True" MaxLength="25" DecimalPrecision="2" IsNewColumn="True" IsUnicode="True" />
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrAddresstwo" ColumnType="string" AllowNull="True" MaxLength="25" DecimalPrecision="2" IsNewColumn="True" IsUnicode="True" />
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrTaxPin" ColumnType="string" AllowNull="True" MaxLength="25" DecimalPrecision="2" IsNewColumn="True" IsUnicode="True" />
+    <Column TableName="IGFSQuickOrder" ColumnName="UsrAccountEmail" ColumnType="string" AllowNull="True" MaxLength="100" DecimalPrecision="2" DecimalLength="100" IsNewColumn="True" IsUnicode="True" />
+</Table>

@@ -1,0 +1,4 @@
+﻿<Sql TableName="IncreaseAccountNameLength" CustomScript="#CDATA">
+    <CDATA name="CustomScript"><![CDATA[alter table IGFSQuickOrder
+alter column UsrAccountName nvarchar(3000)]]></CDATA>
+</Sql>

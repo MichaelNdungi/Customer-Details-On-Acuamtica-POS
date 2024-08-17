@@ -1,0 +1,30 @@
+﻿<DAC type="IGFS.DAC.IGFSQuickOrder">
+    <Field FieldName="UsrAccountName" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString]
+[PXUIField(DisplayName="Account Name")]
+]]></CDATA>
+    </Field>
+    <Field FieldName="UsrPhone" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString]
+[PXUIField(DisplayName="Phone")]
+]]></CDATA>
+    </Field>
+    <Field FieldName="UsrAddressone" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString(3000)]
+[PXUIField(DisplayName="Address Line 1")]]]></CDATA>
+    </Field>
+    <Field FieldName="UsrAddresstwo" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString(3000)]
+[PXUIField(DisplayName="Address Line 2")]]]></CDATA>
+    </Field>
+    <Field FieldName="UsrTaxPin" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString]
+[PXUIField(DisplayName="Tax Pin")]
+]]></CDATA>
+    </Field>
+    <Field FieldName="UsrAccountEmail" TypeName="string" MapDbTable="IGFSQuickOrder" TextAttributes="#CDATA" StorageName="AddColumn">
+        <CDATA name="TextAttributes"><![CDATA[[PXDBString(100)]
+[PXUIField(DisplayName="Account Email")]
+]]></CDATA>
+    </Field>
+</DAC>
